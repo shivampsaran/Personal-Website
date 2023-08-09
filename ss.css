@@ -1,0 +1,329 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Josefin Sans', 'Quicksand', 'Zen Maru Gothic', sans-serif;
+}
+
+.container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+  position: fixed;
+}
+
+h1.text-font{
+      font-size: 40pt;
+        font-weight: lighter;
+    color: white;
+    font-variant: small-caps;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+.subrectangle {
+  width: 600px;
+  height: 50px;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  max-height: 50px; /* Set the initial max-height value */
+    overflow-x: hidden;
+}
+
+.subrectangle,
+.publication {
+  /* Other CSS properties */
+  cursor: pointer;
+    
+}
+
+.subrectangle:hover,
+{
+  /* Other CSS properties */
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+.subrectangle h2,
+.publication h2 {
+  font-size: 125%;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  font-family: 'Josefin Sans', 'Quicksand', 'Zen Maru Gothic', sans-serif;
+  color: black;
+      font-variant: small-caps;
+  margin-top: auto;
+  padding-left: 0;
+}
+
+.publications-container {
+  overflow-y: hidden;
+    overflow-x: hidden;
+  max-height: 0;
+  transition: max-height .9s ease-in-out;
+}
+
+
+.publications-container.expanded {
+  max-height: 1000px;
+    visibility: visible;
+}
+
+
+
+.project, .involvement, .publication {
+  background-color: black;
+  height: 50px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.publication h3, .project h3, .involvement h3{
+  font-size: 90%;
+    margin: 5px;
+    padding: auto;
+  font-family: 'Josefin Sans', 'Quicksand', 'Zen Maru Gothic', sans-serif;
+  color: skyblue;
+    
+}
+
+
+#about-container {
+     background-color: black;
+  height: 100%;
+  width: 600px;
+  display: flex;
+    flex-direction: column;
+  justify-content: flex-start;
+    vertical-align: middle;
+} 
+
+#about-container h3 {
+  font-size: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: auto;
+  font-family: 'Josefin Sans', 'Quicksand', 'Zen Maru Gothic', sans-serif;
+  color: skyblue;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.circle {
+  position: absolute;
+  right: -12px;
+  transform: translateY(155%);
+  width: 5px;
+  height: 5px;
+  background-color: skyblue;
+  border-radius: 50%;
+  display: none;
+}
+
+.publications-container.expanded .publication .circle {
+  display: block;
+}
+
+
+.publication span {
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: .5;
+    font-size: 90%;
+    color: plum;
+}
+
+.line {
+  position: absolute;
+  right: -10px;
+  transform: translateY(51%);
+  width: .5px;
+  height: 200px;
+  background-color: skyblue;
+  border-radius: 50%;
+  display: none;
+}
+
+.publications-container.expanded .publication .line {
+  display: block;
+      transition:  1s ease-in-out;
+}
+
+
+.degree {
+    font-style: italic;
+    font-size: 80%;
+}
+
+
+.involvement {
+    cursor: pointer;
+}
+
+.emory-box, .uchicago-box{
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background-color: black;
+      border: 1px solid skyblue;
+      padding: 20px;
+    }
+
+
+.internship-box {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background-color: black;
+      border: 1px solid skyblue;
+      padding: 20px;
+    }
+
+
+.fixed-container {
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+    z-index: 999;
+}
+
+.intern-box {
+  width: 632px;
+    display: none;
+    background-color: black;
+}
+
+.box {
+  height: 210px;
+  width: 210px;
+  border: 1px solid skyblue;
+  float: left;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.box:hover {
+    background-color: gray;
+}
+
+
+.close-button, #uchicago-modal span {
+      position: absolute;
+      top: 2px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      color: white;
+        font-size: 250%;
+    }
+
+.close-button:hover, #uchicago-modal span:hover {
+      color: red;
+    }
+
+.LinkedInLogo {
+    padding-top: 10px;
+    width: 30px; 
+    height: auto;
+}
+
+.TwitLogo {
+    width: 50px;
+    height: auto;
+}
+
+.EmailLogo {
+    width: 35px;
+    height: auto;
+    padding-bottom: 2.5px;
+}
+
+.contact {
+    display: inline-block;
+}
+
+.arrows {
+    display: none;
+    cursor: pointer;
+    align-content: center;
+    z-index: 1;
+}
+
+.arrow:hover {
+    opacity: 80%;
+}
+
+.noselect {
+  -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+     -khtml-user-select: none; 
+       -moz-user-select: none; 
+        -ms-user-select: none; 
+            user-select: none; 
+}
+.arrows span {
+    font-size: 900%;
+}
+
+#left-arrow {
+    padding-right: 650px;
+}
+
+
+.internship-boxes h3, .uchicago-box h3, .emory-box h3 {
+    padding: 0;
+    margin: 0;
+/*font-family: 'Playfair Display SC', serif;*/
+    font-size: 30pt;
+    color: lightgray;
+    font-weight: lighter;
+        font-variant: small-caps;
+}
+
+#allboxes p {
+    line-height: 1.2;
+}
