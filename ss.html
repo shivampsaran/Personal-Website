@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> SHIVAM SARAN </title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Quicksand:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="ss.css">
+<script>
+function toggleContainer(containerId) {
+  var container = document.getElementById(containerId);
+  var otherContainerIds = ['about-container', 'involvements-container', 'publications-container', 'projects-container', 'contact-container'];
+
+  if (!container.classList.contains('expanded')) {
+    // Collapse other containers
+    otherContainerIds.forEach(function(id) {
+      if (id !== containerId) {
+        var otherContainer = document.getElementById(id);
+        otherContainer.classList.remove('expanded');
+      }
+    });
+      
+      
+  }
+  container.classList.toggle('expanded');
+}
+
+
+</script>
+  <base target="_blank">
+</head>  
+    
+    
+<body>
+
+    
+  <div class="container">
+    <h1 class="text-font">Shivam Saran.</h1>
+  
+    <div class="subrectangle" onclick="toggleContainer('about-container')">
+      <h2>About</h2>
+    </div>
+    <div id="about-container" class="publications-container">
+      <h3>
+           My name is Shivam Saran and I'm a justice advocate from Las Vegas. My work lies at the intersection of technology and law, exploring how advancements (and abuses) in technology shape legal systems and public interest. Welcome to my website.
+        </h3>
+    </div>  
+
+      
+      <div class="subrectangle" onclick="toggleContainer('involvements-container')">
+  <h2>Involvements</h2>
+</div>
+<div id="involvements-container" class="publications-container">
+      <div class="involvement" data-content="UCHICAGO">
+        <a><h3>University of Chicago</h3></a>
+      </div>
+      <div class="involvement" data-content="EMORY">
+        <a><h3>Emory University</h3></a>
+      </div>
+        <div class="involvement" data-content="INTERN">
+        <a><h3>Past Internships</h3></a>
+      </div>
+    </div>
+ 
+      
+<div class="fixed-container">
+  <div class="intern-box" id="intern-modal">
+<div class="box" data-content="STOP">
+      <div class="front">Surveillance Technology Oversight Project (S.T.O.P.)</div>
+    </div>
+      <div class="box" data-content="ROOS">
+      <div class="front">The Roosevelt Network</div>
+    </div>
+      <div class="box" data-content="ABA">
+      <div class="front">American Bar Association</div>
+    </div>
+      <div class="box" data-content="CAP">
+      <div class="mask-container">
+      <div class="front">Center for American Progress</div>
+      </div>  
+    </div>
+      <div class="box" data-content="HKS">
+      <div class="front">Harvard Kennedy School</div>
+    </div>
+      <div class="box" data-content="UN">
+      <div class="front">United Nations </div>
+    </div>
+      <div class="box" data-content="DHL">
+      <div class="front">Emory Digital Humanities Lab</div>
+    </div>
+      <div class="box" data-content="QTM">
+      <div class="front">Emory QTM Department</div>
+    </div>
+      <div class="box" data-content="EGHI">
+      <div class="front">Emory Global Health Institute</div>
+    </div>
+    <div>
+    <span class="close-button" id="intern-close-btn">&times;</span> </div>  
+  </div>
+
+</div>      
+
+
+      
+      
+<div class="subrectangle" onclick="toggleContainer('publications-container')">
+      <h2>Publications</h2>
+</div>
+    <div id="publications-container" class="publications-container">
+      <div class="publication">
+        <a href="https://etd.library.emory.edu/concern/etds/05741s953">
+            <h3><span class="circle">&ensp; May 2023</span>Jailbirds: A Machine-Learning Approach to Measuring Racial and Ethnic Disparities in Bail Setting</h3></a>
+              <div class="line"> </div>
+      </div>
+      <div class="publication">
+        <a href="https://static1.squarespace.com/static/5c1bfc7eee175995a4ceb638/t/6397a639b941316c9b69d001/1670882886398/2022.12.12_Privatizing+The+Surveillance+State.pdf">
+            <h3><span class="circle">&ensp; Dec 2022</span>Privatizing the Surveillance State: How Police Foundations Undermine Rule of Law</h3></a>
+      </div>
+      <div class="publication">
+        <a href="https://rooseveltinstitute.org/wp-content/uploads/2021/06/RN_Online10Ideas_202106-1.pdf#page=9"><h3><span class="circle">&ensp; June 2021</span>Instituting Financial Incentives to Increase Employment for People with Disabilities in California</h3></a>
+      </div>
+      <div class="publication">
+        <a href="https://rooseveltinstitute.org/wp-content/uploads/2020/07/RN_SummerFellowship_IssueBrief_202006.pdf">
+            <h3><span class="circle">&ensp; June 2020</span>Toward an Understanding of Effective Practices in Employment Programs for People with Disabilities in California</h3></a>
+      </div>
+      <div class="publication">
+        <a href="https://undocs.org/Home/Mobile?FinalSymbol=E%2FCN.5%2F2020%2FNGO%2F36&Language=E&DeviceType=Desktop&LangRequested=False">
+            <h3><span class="circle">&ensp; Feb 2020</span>Affordable Housing and Social Protection Systems for Persons with Disabilities</h3></a>
+      </div>
+    </div>
+      
+<div class="subrectangle" onclick="toggleContainer('projects-container')">
+      <h2>Projects</h2>
+</div>
+    <div id="projects-container" class="publications-container">
+      <div class="project">
+        <a href="https://editor.p5js.org/shivamsaran/full/dsB_sdZVH"><h3>Congressional Polarization, 1945-2021</h3></a>
+      </div>
+      <div class="project">
+        <a href="file:///Applications/Personal%20Website/KD.html"><h3>Visualizing Kanye West's Discography</h3></a>
+      </div>
+      <div class="project">
+        <a href="https://public.tableau.com/app/profile/shivam.saran/viz/TheChicagoSkyline/Dashboard2?publish=yes"><h3>The Chicago Skyline</h3></a>
+      </div>
+      <div class="project">
+        <a href="https://public.tableau.com/app/profile/shivam.saran/viz/VisualizingthePrevalenceofDisabilityAroundtheWorld/Dashboard"><h3>Visualizing the Prevalence of Disability Around the World</h3></a>
+      </div>
+      <div class="project">
+        <a href="https://public.tableau.com/app/profile/shivam.saran/viz/TheBeatlesEffect/Dashboard1"><h3>The Beatles Effect</h3></a>
+      </div>
+    </div>
+    
+<div class="subrectangle" onclick="toggleContainer('contact-container')">
+      <h2>Contact</h2>
+</div>
+      
+      <div id="contact-container" class="publications-container">
+        <span class="contact">
+            <a href="https://linkedin.com/in/shivamsaran"><img src="Images/LinkedInLogo.png" class="LinkedInLogo"></a>
+        </span>
+        <span class="contact">
+            <a href="https://twitter.com/1shivamsaran?lang=en"><img src="Images/TwitterLogo.png" class="TwitLogo"></a>
+        </span>
+          <span class="contact">
+            <a href="mailto::shivampsaran@gmail.com"><img src="Images/GmailLogo.webp" class="EmailLogo"></a>
+        </span> 
+    </div>
+
+  </div>
+    
+    
+   <!--  OPENING BOXES-->
+    <div id = "allboxes">
+        <!--  UCHICAGO -->
+
+  <div class="uchicago-box" id="uchicago-modal">
+    <span class="uchicago-button" id="uchicago-close-btn">&times;</span>
+    <h3> University of Chicago </h3>
+        <hr>
+      <p> I'm currently working at the University of Chicago as a research specialist under the mentorship of Professor Eric Posner. At the moment, I'm assisting Prof. Posner on two key projects: (1) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4488397"> Trump's Lower-Court Judges and Religion: An Initial Appraisal </a> and (2) Monopsony in Labor Markets (in the works).
+      
+          <br> <br>
+      You can view an a brief discussing the 'Trump Judges' project <a href="https://www.nytimes.com/2023/07/17/us/politics/trump-judges-religion-nra.html">here</a>. 
+      </p>
+      
+      
+  </div>
+    
+    <!--  EMORY -->
+
+  <div class="emory-box" id="emory-modal">
+    <span class="close-button" id="emory-close-btn">&times;</span>
+    <h3>Emory University, Class of 2023</h3>
+        <hr>
+      
+      <p> This past spring, I graduated from Emory University with a B.S. in Quantiative Sciences and a Minor in Physics. I was awarded Summa Cum Laude (Highest Honors) for the completion of my undergraduate honors thesis, which explored the landscape of America's bail system and introduced a novel machine learning approach for measuring racial and ethnic disparities in bail setting.  </p>
+      
+<!--      <img src="Images/SS%20DIPLOMA-1.png" style="width: 150px;  display: block; position: relative; bottom: -10px"> -->
+  </div>
+    
+    
+    
+    <!--  INTERNSHIP BOXES-->
+    <div class="internship-boxes">
+    
+    <div  id="stop-modal" class="internship-box">
+    <span class="close-button" id="stop-close-btn">&times;</span>
+    <h3>Surveillance Technology Oversight Project</h3>
+        <hr>
+      <p> During the Fall 2022 semester, I had the oppurtunity to work with the Surveillance Technology Oversigh Project (S.T.O.P) as a research intern. I researched a number of issues related to the unjust uses of surveillance technologies by law enforcement agencies, including the secretive system of police foundations and how fusion centers target undocumented immigrants. </p>
+        
+<!--
+    <a href="https://static1.squarespace.com/static/5c1bfc7eee175995a4ceb638/t/6397a639b941316c9b69d001/1670882886398/2022.12.12_Privatizing+The+Surveillance+State.pdf">  
+        <img src="Images/STOP%20Publication%20Cover%201.png" style="width: 180px; height: auto">
+        </a> 
+        
+-->
+    </div>
+        
+    <div  id="roos-modal" class="internship-box">
+    <span class="close-button" id="roos-close-btn">&times;</span>
+    <h3>The Roosevelt Network</h3>
+                <hr>
+        
+        The Roosevelt Network is an organization dedicated to developing young progressives into future policymakers and champions of justice. Throughout my undergraduate years, I was involved with the network through several capacities. Currently, I'm in the inaugral cohort of their Young Professionals Program. 
+        
+        <hr>
+      <h4>National Policy Expo, Director</h4>
+      <p style="font-size: 90%"> As Director of the Roosevelt Network's National Policy Expo, I oversaw the planning, promotion, and all logistics of the inaugral event. </p>
+        <hr>
+      <h4>Southern Regional Coordinator / Chapter Organizer </h4>
+      <p style="font-size: 90%"> As a member of the networks National Student Leadership Team, I supported the policy work of Roosevelt chapters in the Southern Region through strategic planning and operational support. </p>
+        <hr>
+      <h4>2020 Summer Fellow</h4>
+      <p style="font-size: 90%"> As a 2020 Summer Fellow, I developed an issue brief detailing the history of employment programs for Persons with Disabilities (PWDs) in California and proposed a solution to better integrate them into the workforce. You can view the brief <span> <a href="https://rooseveltinstitute.org/wp-content/uploads/2020/07/RN_SummerFellowship_IssueBrief_202006.pdf" style="color: white">here</a></span>.  </p>
+        
+    </div>
+        
+    <div  id="ABA-modal" class="internship-box">
+    <span class="close-button" id="ABA-close-btn">&times;</span>
+    <h3>American Bar Association</h3>
+        <hr>
+      <p> During the Spring 2022 semester, I was a public interest intern within the Center for Pro Bono at the American Bar Association. Under the mentorship of Marissa LaVette & Cheryl Zalenski, I researched Access to Justice data, as well as public interest programs in various jurisdictions and developed resources containing the results of such research. </p>
+        
+    </div>  
+        
+    <div  id="CAP-modal" class="internship-box">
+    <span class="close-button" id="CAP-close-btn">&times;</span>
+    <h3>Center for American Progress</h3>
+        <hr>
+      <p> During the Fall 2021 semester, I was an intern within the Rights & Justice Department at the Center for American Progress. Working closely with Mia-Ives Rublee and Eugenio Weigend, I assisted in the development of policy briefs on a variety of sociopolitical issues, including healthcare equity, affordable housing and gun-violence prevention. </p>
+        
+    </div> 
+        
+    <div  id="HKS-modal" class="internship-box">
+    <span class="close-button" id="HKS-close-btn">&times;</span>
+    <h3>Harvard Kennedy School </h3>
+        <hr>
+      <p> 
+          During my sophomore year, I worked as a research assistant with Professor Gautam Nair at thee Harvard Kennedy School of Public Policy. During my time there, I assisted Prof. Nair on two key proects: (1) Analyzing the role of big retail in social protection systems in America and (2) Researching the landscape of interest group competition in India.</p>
+        
+    </div>   
+        
+    <div  id="UN-modal" class="internship-box">
+    <span class="close-button" id="UN-close-btn">&times;</span>
+    <h3>United Nations</h3>
+        <hr>
+      <p> Representing the Voice of Specially Abled People (VOSAP), I delivered disability-rights-focused oral statements amongst 180+ country delegates at the United Nations 58th Session of the Commission for Social Development (CSocD) and the United Nations 12th Session of the Conference of States Parties to the Convention on Rights of Persons with Disabilities (CRPD). </p>
+        
+        <div class="UN-videos">
+            
+    <div class="video">
+        <a href="https://www.youtube.com/watch?v=hljPixGq13U"><p>CSocD</p></a>
+        <a href="https://www.youtube.com/watch?v=hljPixGq13U"><img src="https://img.youtube.com/vi/hljPixGq13U/hqdefault.jpg"></a>
+    </div>        
+    <div class="video">
+        <a href="https://www.youtube.com/watch?v=3o-cqKB9nBw"><p>CRPD</p></a>
+        <a href="https://www.youtube.com/watch?v=3o-cqKB9nBw"><img src="https://img.youtube.com/vi/3o-cqKB9nBw/hqdefault.jpg"></a>
+    </div>
+            
+</div>
+        
+    </div>   
+        
+    <div  id="DHL-modal" class="internship-box">
+    <span class="close-button" id="DHL-close-btn">&times;</span>
+    <h3>Digital Humanities Lab @ Emory</h3>
+        <hr>
+      <p> As a Digital Humanities Lab Research Assistant, I worked closely with Professor Lauren Klein to increase the visual accessibility of the Open-Access version of her book, <a href="https://direct.mit.edu/books/oa-monograph/4660/Data-Feminism">Data Feminism</a>, by writing HTML alternative attributes (alt texts) for all images within the book. </p>
+        
+    </div>    
+        
+    <div  id="QTM-modal" class="internship-box">
+    <span class="close-button" id="QTM-close-btn">&times;</span>
+    <h3>Department of Quantitative Theory & Methods @ Emory</h3>
+        <hr>
+      <p> During my senior year, I served as an undergraduate ambassador for the Department of Quantitative Theory & Methods (QTM). As an ambassador, I served as a liason between the QTM department and Emory's student body, encouraging incoming students to pursue a study in data science. I also provided organizational support for department events & programming.  </p>
+        
+    </div>
+        
+    <div  id="EGHI-modal" class="internship-box">
+        
+    <span class="close-button" id="EGHI-close-btn">&times;</span>
+    <h3>Emory Global Health Institute (EGHI) </h3>
+        <hr>
+      <p> During the 2021-22 and 2022-2023 academic years, I served on the EGHI Student Advisory Committee. This committee consisted of students across all Emory colleges and schools, working together to foster global health awareness within the Emory community on a number of issues, namely COVID-19 Resource Allocation and Diseases of Poverty. </p>
+        
+    
+    </div>
+       </div> 
+        </div>
+    
+    <div class="arrows noselect" id="arrow-modal"> 
+        <span class="arrow" id="left-arrow" style="color: white">&#8249;</span>
+        <span class="arrow" id="right-arrow" style="color: white">&#8250;</span>
+    </div>
+    
+      <script>
+    
+    const arrowModal = document.getElementById('arrow-modal');
+    function openarrowModal() {
+      arrowModal.style.display = 'block';
+    }
+    function closearrowModal() {
+      arrowModal.style.display = 'none';
+    }          
+          
+    const emoryModal = document.getElementById('emory-modal');
+    const emoryCloseButton = document.getElementById('emory-close-btn');
+    function openemoryModal() {
+      emoryModal.style.display = 'block';
+    }
+    function closeemoryModal() {
+      emoryModal.style.display = 'none';
+    }
+    const EMORYdiv = document.querySelector('[data-content="EMORY"]');
+    EMORYdiv.addEventListener('click', openemoryModal);
+    emoryCloseButton.addEventListener('click', closeemoryModal);
+          
+    const uchicagoModal = document.getElementById('uchicago-modal');
+    const uchicagoCloseButton = document.getElementById('uchicago-close-btn');
+    function openuchicagoModal() {
+      uchicagoModal.style.display = 'block';
+    }
+    function closeuchicagoModal() {
+      uchicagoModal.style.display = 'none';
+    }
+    const UCHICAGOdiv = document.querySelector('[data-content="UCHICAGO"]');
+    UCHICAGOdiv.addEventListener('click', openuchicagoModal);
+    uchicagoCloseButton.addEventListener('click', closeuchicagoModal);      
+
+      
+    const internModal = document.getElementById('intern-modal');
+    const internCloseButton = document.getElementById('intern-close-btn');
+      
+    function openinternModal() {
+      internModal.style.display = 'block';
+    }
+    function closeinternModal() {
+      internModal.style.display = 'none';
+    }
+    const INTERNdiv = document.querySelector('[data-content="INTERN"]');
+    INTERNdiv.addEventListener('click', openinternModal);
+    internCloseButton.addEventListener('click', closeinternModal);     
+      
+    const stopModal = document.getElementById('stop-modal');
+    const stopCloseButton = document.getElementById('stop-close-btn');
+      
+    function openstopModal() {
+      stopModal.style.display = 'block';
+    }
+    function closestopModal() {
+      stopModal.style.display = 'none';
+    }
+    const STOPdiv = document.querySelector('[data-content="STOP"]');
+    STOPdiv.addEventListener('click', openstopModal);
+    STOPdiv.addEventListener('click', openarrowModal);
+    stopCloseButton.addEventListener('click', closestopModal); 
+    stopCloseButton.addEventListener('click', closearrowModal);      
+      
+    const roosModal = document.getElementById('roos-modal');
+    const roosCloseButton = document.getElementById('roos-close-btn');
+      
+    function openroosModal() {
+      roosModal.style.display = 'block';
+    }
+    function closeroosModal() {
+      roosModal.style.display = 'none';
+    }
+    const ROOSdiv = document.querySelector('[data-content="ROOS"]');
+    ROOSdiv.addEventListener('click', openroosModal);
+    ROOSdiv.addEventListener('click', openarrowModal);      
+    roosCloseButton.addEventListener('click', closeroosModal);
+    roosCloseButton.addEventListener('click', closestopModal);
+      
+    const ABAModal = document.getElementById('ABA-modal');
+    const ABACloseButton = document.getElementById('ABA-close-btn');
+      
+    function openABAModal() {
+      ABAModal.style.display = 'block';
+    }
+    function closeABAModal() {
+      ABAModal.style.display = 'none';
+        
+    }
+    const ABAdiv = document.querySelector('[data-content="ABA"]');
+    ABAdiv.addEventListener('click', openABAModal);
+          ABAdiv.addEventListener('click', openarrowModal);
+    ABACloseButton.addEventListener('click', closeABAModal);
+          ABACloseButton.addEventListener('click', closearrowModal);
+      
+    const CAPModal = document.getElementById('CAP-modal');
+    const CAPCloseButton = document.getElementById('CAP-close-btn');
+      
+    function openCAPModal() {
+      CAPModal.style.display = 'block';
+    }
+    function closeCAPModal() {
+      CAPModal.style.display = 'none';
+    }
+    const CAPdiv = document.querySelector('[data-content="CAP"]');
+    CAPdiv.addEventListener('click', openCAPModal);
+          CAPdiv.addEventListener('click', openarrowModal);
+    CAPCloseButton.addEventListener('click', closeCAPModal);
+          CAPCloseButton.addEventListener('click', closearrowModal);
+      
+    const HKSModal = document.getElementById('HKS-modal');
+    const HKSCloseButton = document.getElementById('HKS-close-btn');
+      
+    function openHKSModal() {
+      HKSModal.style.display = 'block';
+    }
+    function closeHKSModal() {
+      HKSModal.style.display = 'none';
+    }
+    const HKSdiv = document.querySelector('[data-content="HKS"]');
+    HKSdiv.addEventListener('click', openHKSModal);
+          HKSdiv.addEventListener('click', openarrowModal);
+    HKSCloseButton.addEventListener('click', closeHKSModal);
+          HKSCloseButton.addEventListener('click', closearrowModal);
+      
+    const UNModal = document.getElementById('UN-modal');
+    const UNCloseButton = document.getElementById('UN-close-btn');
+      
+    function openUNModal() {
+      UNModal.style.display = 'block';
+    }
+    function closeUNModal() {
+      UNModal.style.display = 'none';
+    }
+    const UNdiv = document.querySelector('[data-content="UN"]');
+    UNdiv.addEventListener('click', openUNModal);
+          UNdiv.addEventListener('click', openarrowModal);
+    UNCloseButton.addEventListener('click', closeUNModal);
+        UNCloseButton.addEventListener('click', closearrowModal);
+      
+    const DHLModal = document.getElementById('DHL-modal');
+    const DHLCloseButton = document.getElementById('DHL-close-btn');
+      
+    function openDHLModal() {
+      DHLModal.style.display = 'block';
+    }
+    function closeDHLModal() {
+      DHLModal.style.display = 'none';
+    }
+    const DHLdiv = document.querySelector('[data-content="DHL"]');
+    DHLdiv.addEventListener('click', openDHLModal);
+          DHLdiv.addEventListener('click', openarrowModal);
+    DHLCloseButton.addEventListener('click', closeDHLModal);
+          DHLCloseButton.addEventListener('click', closearrowModal);
+      
+    const QTMModal = document.getElementById('QTM-modal');
+    const QTMCloseButton = document.getElementById('QTM-close-btn');
+      
+    function openQTMModal() {
+      QTMModal.style.display = 'block';
+    }
+    function closeQTMModal() {
+      QTMModal.style.display = 'none';
+    }
+    const QTMdiv = document.querySelector('[data-content="QTM"]');
+    QTMdiv.addEventListener('click', openQTMModal);
+          QTMdiv.addEventListener('click', openarrowModal);
+    QTMCloseButton.addEventListener('click', closeQTMModal);
+          QTMCloseButton.addEventListener('click', closearrowModal);
+      
+    const EGHIModal = document.getElementById('EGHI-modal');
+    const EGHICloseButton = document.getElementById('EGHI-close-btn');
+      
+    function openEGHIModal() {
+      EGHIModal.style.display = 'block';
+    }
+    function closeEGHIModal() {
+      EGHIModal.style.display = 'none';
+    }
+    const EGHIdiv = document.querySelector('[data-content="EGHI"]');
+    EGHIdiv.addEventListener('click', openEGHIModal);
+          EGHIdiv.addEventListener('click', openarrowModal);
+    EGHICloseButton.addEventListener('click', closeEGHIModal);
+          EGHICloseButton.addEventListener('click', closearrowModal);
+        
+          
+  </script>
+
+    
+<script>
+  const internships = document.querySelectorAll('.internship-box');
+  const leftArrow = document.getElementById('left-arrow');
+  const rightArrow = document.getElementById('right-arrow');
+
+  function showInternship(index) {
+    internships.forEach((internship, i) => {
+      internship.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  function showNextInternship() {
+    const currentIndex = Array.from(internships).findIndex((internship) => getComputedStyle(internship).display !== 'none');
+    const nextIndex = (currentIndex + 1) % internships.length;
+    showInternship(nextIndex);
+  }
+
+  function showPreviousInternship() {
+    const currentIndex = Array.from(internships).findIndex((internship) => getComputedStyle(internship).display !== 'none');
+    const previousIndex = (currentIndex - 1 + internships.length) % internships.length;
+    showInternship(previousIndex);
+  }
+
+  internships.forEach((internship, index) => {
+    internship.addEventListener('click', () => {
+      showInternship(index);
+    });
+
+    const closeButton = internship.querySelector('.close-button');
+    closeButton.addEventListener('click', (event) => {
+      event.stopPropagation(); // Stop the event from propagating to the parent internship box
+      internship.style.display = 'none';
+    });
+  });
+
+  leftArrow.addEventListener('click', showPreviousInternship);
+  rightArrow.addEventListener('click', showNextInternship);
+</script>
+
+
+
+    
+    
+</body>
+    
+
+
+
+  
+    
+</html>
