@@ -3,8 +3,8 @@ var fft
 var img
 
 function preload() {
-  song = loadSound('/songs/We Can Work It Out.mp3')
-  img = loadImage('/covers/beatles1.png')
+  song = loadSound('../songs/We Can Work It Out.mp3')
+  img = loadImage('../covers/beatles1.png')
 }
 
 
