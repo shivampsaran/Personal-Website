@@ -12,3 +12,14 @@ canvas {
   top: 50%;
   left: 50%;
 }
+
+h4 {
+    font-size: 250%;
+    color: pink;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
