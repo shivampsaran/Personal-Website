@@ -3,7 +3,7 @@ var fft
 var img
 
 function preload() {
-  song = loadSound('Somethin Stupid.mp3)
+  song = loadSound('Somethin Stupid.mp3')
   img = loadImage('Sinatra.png')
 }
 
