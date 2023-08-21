@@ -34,7 +34,7 @@ function draw() {
   rect(0,0,width, height)
   
   stroke(255)
-  strokeWeight(.5)
+  strokeWeight(1.5)
   noFill()
   
   var wave = fft.waveform()
