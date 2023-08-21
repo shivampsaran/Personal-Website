@@ -1,6 +1,9 @@
+var song;
 var fft;
-var amp;
-var wave;
+
+function preload() {
+  song = loadSound('SpotifyMate.com - Alone Again - The Weeknd.mp3');
+}
 
 function setup() {
   createCanvas(700, 700);
@@ -8,15 +11,6 @@ function setup() {
   imageMode(CENTER);
   rectMode(CENTER);
   fft = new p5.FFT();
-
-  loadImage('Alone Again.jpeg', function(img) {
-    image(img, width/2, height/2, width + 100, height + 100);
-  });
-
-  createAudio('SpotifyMate.com - Alone Again - The Weeknd.mp3', function(song) {
-    song.play();
-    loop();
-  });
 }
 
 function draw() {
@@ -25,7 +19,10 @@ function draw() {
   translate(width / 2, height / 2);
 
   fft.analyze();
-  amp = fft.getEnergy(20, 200);
+  var amp = fft.getEnergy(20, 200);
+
+  var img = document.getElementById('background-image');
+  image(img, 0, 0, width + 100, height + 100);
 
   var alpha = map(amp, 0, 255, 180, 150);
   fill(0, alpha);
@@ -36,7 +33,7 @@ function draw() {
   strokeWeight(1.5);
   noFill();
 
-  wave = fft.waveform();
+  var wave = fft.waveform();
 
   for (var t = -1; t <= 1; t += 2) {
     beginShape();
