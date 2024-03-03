@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> SHIVAM SARAN </title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Quicksand:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="ss.css">
+  <base target="_blank">
+
+<script>
+function toggleContainer(containerId) {
+  var container = document.getElementById(containerId);
+  var otherContainerIds = ['about-container', 'involvements-container', 'publications-container', 'projects-container', 'contact-container'];
+
+  if (!container.classList.contains('expanded')) {
+    // Collapse other containers
+    otherContainerIds.forEach(function(id) {
+      if (id !== containerId) {
+        var otherContainer = document.getElementById(id);
+        otherContainer.classList.remove('expanded');
+      }
+    });
+      
+      
+  }
+  container.classList.toggle('expanded');
+}
+
+
+</script> 
+    
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var circleCursor = document.createElement('div');
+  circleCursor.className = 'circle-cursor';
+  document.body.appendChild(circleCursor);
+
+  document.addEventListener('mousemove', function (e) {
+    circleCursor.style.left = e.clientX + 'px';
+    circleCursor.style.top = e.clientY + 'px';
+    circleCursor.style.display = 'block';
+    document.removeEventListener('mousemove', this);
+  });
+});
+</script>
+    
+</head>  
+     
+    
+    
+<body>
+
+  <div class="name">Shivam Saran.</div>
+    
+  <div class="container">
+  
+    <div class="subrectangle" onclick="toggleContainer('about-container')">
+      <h2>about.</h2>
+    </div>
+    <div id="about-container" class="section-container">
+      <h5>
+           My name is Shivam Saran. I graduated Summa Cum Laude from Emory University with a B.S. in Quantitative Sciences and a Minor in Physics. I am interested in the intersection between Data Science and Law. Welcome to my website.
+        </h5>
+    </div>  
+      
+    <div class="subrectangle" onclick="toggleContainer('involvements-container')">
+      <h2>involvements.</h2>
+    </div>
+<div id="involvements-container" class="section-container">
+    <h5>Research Specialist @ <a href="https://www.law.uchicago.edu/" target="_blank">University of Chicago Law School</a> (current)</h5>
+    <h5>Fellow @ <a href="https://www.paragonfellowship.org/" target="_blank">Paragon Policy Fellowship</a> (current)</h5>
+    <h5>Research Intern @ <a href="https://www.stopspying.org/" target="_blank">Surveillance Technology Oversight Project</a></h5>
+    <h5>Public Interest Intern @ <a href="https://www.americanbar.org/" target="_blank">American Bar Association</a></h5>
+    <h5>Rights & Justice Intern @ <a href="https://www.americanprogress.org/" target="_blank">Center for American Progress</a></h5>
+    <h5>Research Assistant @ <a href="https://www.hks.harvard.edu/" target="_blank">Harvard Kennedy School</a></h5>
+    <h5>National Policy Expo Director / Regional Coordinator @ <a href="https://www.americanbar.org/" target="_blank">Roosevelt Network</a></h5>
+    <h5>Research Assistant @ <a href="https://www.americanprogress.org/" target="_blank">Emory Digital Humanities Lab</a></h5>
+    <h5>Delegate for Voice of Specially Abled People @ <a href="https://www.hks.harvard.edu/" target="_blank">United Nations</a></h5>
+    <h5>Student Ambassador @ <a href="https://www.americanprogress.org/" target="_blank">Emory Quantitative Theory & Methods Department</a></h5>
+    <h5>Student Advisory Committee @ <a href="https://www.hks.harvard.edu/" target="_blank">Emory Global Health Institute</a></h5>
+</div>
+
+ 
+        
+
+
+      
+      
+<div class="subrectangle" onclick="toggleContainer('publications-container')">
+      <h2>publications.</h2>
+</div>
+    <div id="publications-container" class="section-container">
+    
+      <div class="publication">
+        <a href="https://etd.library.emory.edu/concern/etds/05741s953">
+            <h5><span class="circle">&ensp; May 2023</span>Jailbirds: A Machine-Learning Approach to Measuring Racial and Ethnic Disparities in Bail Setting</h5></a>
+              <div class="line"> </div>
+      </div>
+      <div class="publication">
+        <a href="https://static1.squarespace.com/static/5c1bfc7eee175995a4ceb638/t/6397a639b941316c9b69d001/1670882886398/2022.12.12_Privatizing+The+Surveillance+State.pdf">
+            <h5><span class="circle">&ensp; Dec 2022</span>Privatizing the Surveillance State: How Police Foundations Undermine Rule of Law</h5></a>
+      </div>
+      <div class="publication">
+        <a href="https://rooseveltinstitute.org/wp-content/uploads/2021/06/RN_Online10Ideas_202106-1.pdf#page=9"><h5><span class="circle">&ensp; June 2021</span>Instituting Financial Incentives to Increase Employment for People with Disabilities in California</h5></a>
+      </div>
+      <div class="publication">
+        <a href="https://rooseveltinstitute.org/wp-content/uploads/2020/07/RN_SummerFellowship_IssueBrief_202006.pdf">
+            <h5><span class="circle">&ensp; June 2020</span>Toward an Understanding of Effective Practices in Employment Programs for People with Disabilities in California</h5></a>
+      </div>
+      <div class="publication">
+        <a href="https://undocs.org/Home/Mobile?FinalSymbol=E%2FCN.5%2F2020%2FNGO%2F36&Language=E&DeviceType=Desktop&LangRequested=False">
+            <h5><span class="circle">&ensp; Feb 2020</span>Affordable Housing and Social Protection Systems for Persons with Disabilities</h5></a>
+      </div>
+    </div>
+      
+<div class="subrectangle" onclick="toggleContainer('projects-container')">
+      <h2>projects.</h2>
+</div>
+    <div id="projects-container" class="section-container">
+        <div id="vibrations-project" class="project">
+        <a href="Projects/Vibrations/Vibrations.html"><h5>Vibrations</h5></a>
+        <img src="Projects/Vibrations/Black%20Dog.png" id="vibrations-image"> <img>
+      </div>
+      <div id="CP-project" class="project">
+        <a href="https://editor.p5js.org/shivamsaran/full/QjCzGMO9N"><h5>Congressional Polarization, 1945-2023</h5></a>
+        <img src="Images/CP.png" id="CP-image"> <img>
+      </div>
+<!--
+      <div class="project">
+        <a href="file:///Applications/Personal%20Website/KD.html"><h5>Visualizing Kanye West's Discography</h5></a>
+      </div>
+-->
+      <div id="CS-project" class="project">
+        <a href="https://public.tableau.com/app/profile/shivam.saran/viz/TheChicagoSkyline/Dashboard2?publish=yes"><h5>The Chicago Skyline</h5></a>
+          <img src="Images/CS1.png" id="CS-image"> <img>
+      </div>
+      <div id="PWD-project" class="project">
+        <a href="https://public.tableau.com/app/profile/shivam.saran/viz/VisualizingthePrevalenceofDisabilityAroundtheWorld/Dashboard"><h5>Visualizing the Prevalence of Disability Around the World</h5></a>
+          <img src="Images/PWDD.png" id="PWD-image"> <img>
+      </div>
+      <div id="Beatles-project" class="project">
+        <a href="https://public.tableau.com/app/profile/shivam.saran/viz/TheBeatlesEffect/Dashboard1"><h5>The Beatles Effect</h5></a>
+          <img src="Images/Beatles.png" id="Beatles-image"> <img>
+      </div>
+    </div>
+    
+<div class="subrectangle" onclick="toggleContainer('contact-container')">
+      <h2>contact.</h2>
+</div>
+      
+      <div id="contact-container" class="section-container">
+        <span class="contact">
+            <a href="https://linkedin.com/in/shivamsaran"><img src="Images/LinkedInLogo.png" class="LinkedInLogo"></a>
+        </span>
+        <span class="contact">
+            <a href="https://twitter.com/1shivamsaran?lang=en"><img src="Images/TwitterLogo.png" class="TwitLogo"></a>
+        </span>
+          <span class="contact">
+            <a href="mailto::shivampsaran@gmail.com"><img src="Images/GmailLogo.webp" class="EmailLogo"></a>
+        </span> 
+    </div>
+
+  </div>
+    
+    
+    
+
+
+
+
+    
+    
+</body>
+    
+
+
+
+  
+    
+</html>
